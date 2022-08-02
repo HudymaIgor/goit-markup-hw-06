@@ -13,23 +13,25 @@
 <body class="body">
     <!--верхняя линия-->
     <header class="header">
-        <div class="header-div container">
-            <nav class="header-nav">
-                <a href="./index.html" class="logo"><span class="first-logo">Web</span>Studio</a>
-                <ul class="header-ul list">
-                    <li class="item"><span href="./index.html" class=" current-page">Студия</span></li>
-                    <li class="item"><a href="./portfolio.html" class="nav-page">Портфолио</a></li>
-                    <li class="item"><a href="#" class="nav-page">Контакты</a></li>
+        <div class="header-container container">
+            <nav class="navigation">
+                <a href="./index.html" class="navigation__logo logo"><span class="logo--color">Web</span>Studio</a>
+                <ul class="navigation__list list">
+                    <li class="navigation__item"><a href="./index.html" class="current__page">Студия</a></li>
+                    <li class="navigation__item"><a href="./portfolio.html" class="navigation__page">Портфолио</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__page">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="header-contact list">
-                <li class="contact-li">
-                    <a href="mailto:info@devstudio.com" class="contact-a"><svg class="contact-svg" width="16px" height="12px">
+            <ul class="contacts list">
+                <li class="contact__li">
+                    <a href="mailto:info@devstudio.com" class="contact__link">
+                    <svg class="contact__svg" width="16px" height="12px">
                         <use href="./images/icons.svg#icon-envelope"></use>
                     </svg> info@devstudio.com</a>
                 </li>
-                <li class="contact-li">
-                    <a href="tel:+380961111111" class="contact-a"><svg class="contact-svg" width="10px" height="16px">
+                <li class="contact__li">
+                    <a href="tel:+380961111111" class="contact__link">
+                    <svg class="contact__svg" width="10px" height="16px">
                         <use href="./images/icons.svg#icon-smartphone"></use>
                     </svg>+38 096 111 11 11</a>
                 </li>
@@ -49,15 +51,14 @@
                             <use href="./images/icons.svg#icon-x"></use>
                         </svg>
                     </button>
-                    <div role="group"  >
-                    <form class="form">
-
+                    <!-- <div role="group" > -->
+                        <form class="form">
                         <p class="form-tatle">Оставьте свои данные, мы вам перезвоним</p>                               
                         
                         <div class="modal-fill">                                                  
                                     <label class="form-label">    
                                         <p class="form-tatle-fill">Имя</p>                                        
-                                        <input type="text" class="form-input" name="username"  >
+                                        <input type="text" class="form__input" name="username"  >
                                         <svg class="contact-svg-man">
                                             <use href="./images/icons.svg#icon-man"></use>
                                         </svg>
@@ -66,39 +67,37 @@
                         <div class="modal-fill">
                             <label class="form-label">
                                 <p class="form-tatle-fill">Телефон</p>
-                                <input type="tel" class="form-input" name="tel">
+                                <input type="tel" class="form__input" name="tel">
                                 <svg class="contact-svg-man">
                                     <use href="./images/icons.svg#icon-telephone"></use>
                                 </svg>
                             </label>
                         </div>
-                         <div class="modal-fill">
-                            <label class="form-label">
+                         <div class="mail modal-fill">
+                            <label>
                                 <p class="form-tatle-fill">Почта</p>
-                                <input type="email" class="form-input" name="mail">
+                                <input type="email" class="form__input" name="mail">
                                 <svg class="contact-svg-man">
                                     <use href="./images/icons.svg#icon-mail"></use>
                                 </svg>
                             </label>
                         </div>
-                        <div class="modal-fill"> 
-                            <label class="form-label">
-                                <p class="form-tatle-fill">Комментарий</p>
-                                <textarea type="comment"  name="comment"  placeholder="Ведите текст" rows="10"></textarea>
+                        <div class="comment"> 
+                            <label class="comment__label" >
+                                <p class="form-tatle-fill comment__title">Комментарий</p>
+                                <textarea class="comment__textarea" type="comment"  name="comment"  placeholder="Ведите текст" rows="10"></textarea>
                             </label>
-                        </div>
-                        
-                        <div class="modal-checkbox">
-                            <label class="form-checkbox">
-                                <p class="form-tatle-fill tatle-checkbox">Соглашаюсь с рассылкой и принимаю <a href="#" class="modal-checkbox-a">Условия
-                                    договора</a></p>
-                            <input class="checkbox" type="checkbox" name="checkbox">   
-                            <span class="icon-checkbox"></span>                         
+                        </div>                        
+                        <div class="checkbox">
+                            <label class="checkbox__label">
+                                <p class="checkbox__tatle">Соглашаюсь с рассылкой и принимаю <a href="#" class="modal-checkbox-a">Условия
+                                    договора</a>
+                                </p>
+                            <input class="checkbox__input" type="checkbox" name="checkbox">   
+                            <span class="checkbox__icon"></span>                         
                             </label>                            
-                        </div>
-                        <div class="modal-botton">
-                                <button class="modal-form-btn" type="submit">Отправить</button>
-                        </div>
+                        </div>                        
+                            <button class="form__btn" type="submit">Отправить</button>                        
                     </form>
                     </div>
                     </div>                
@@ -269,50 +268,46 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="container footer-container-address">
-        <div class="footer-div">
-            <a href="./index.html" class="logo"><span class="first-logo">Web</span>Studio</a>
-            <address class="footer-address">
-                <ul class="footer-ul list">
-                    <li class="futer-li"><a href="https://goo.gl/maps/piqngm7oDQpEDh6u6" target="_blank"
-                            rel="noopener nofollow noreferrer" class="map">г. Киев, пр-т Леси Украинки, 26</a></li>
-                    <li class="futer-li"><a href="mailto:info@example.com" class="mail">info@example.com</a></li>
-                    <li class="futer-li"><a href="tel:+380991111111" class="tel">+38 099 111 11 11</a></li>
+        <div class="container footer__all-container">
+        <div class="footer__box-address">
+            <a href="./index.html" class="footer__logo logo"><span class="logo--color">Web</span>Studio</a>
+            <address class="address">
+                <ul class="address__ul list">
+                    <li class="address__li"><a href="https://goo.gl/maps/piqngm7oDQpEDh6u6" target="_blank"
+                            rel="noopener nofollow noreferrer" class="address__page">г. Киев, пр-т Леси Украинки, 26</a></li>
+                    <li class="address__li"><a href="mailto:info@example.com" class="address__page address__contact">info@example.com</a></li>
+                    <li class="address__li"><a href="tel:+380991111111" class="address__page address__contact">+38 099 111 11 11</a></li>
                 </ul>
             </address>
         </div>
-        <div class="footer-container-social-networks">
+        <div class="networks">
             <h3 class="footer-h3">присоединяйтесь</h3>
-            <div class="footer-box-svg">
-                        <a href="#" class="footer-a"><svg width="20px" height="20px" class="footer-svg">
+            <div class="networks__box">
+                        <a href="#" class="networks__ikon"><svg width="20px" height="20px" class="footer-svg">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg> </a>
-                        <a href="#" class="footer-a"><svg width="20px" height="20px" class="footer-svg">
+                        <a href="#" class="networks__ikon"><svg width="20px" height="20px" class="footer-svg">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg></a>
-                        <a href="#" class="footer-a"><svg width="20px" height="20px" class="footer-svg">
+                        <a href="#" class="networks__ikon"><svg width="20px" height="20px" class="footer-svg">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg></a>
-                        <a href="#" class="footer-a"><svg width="20px" height="20px" class="footer-svg">
+                        <a href="#" class="networks__ikon"><svg width="20px" height="20px" class="footer-svg">
                                 <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg></a>
             </div>
         </div>
-        <div class="footer-container-networks-connect">
-            <h3 class="footer-h3">пОДПИШИСЬ НА РАСИЛКУ</h3>
-            <div class="container-networks-connect">
-                <div class="networks-connect-fill">            
-                <label class="form-label">                
-                    <input type="email" class="networks-fill" name="mail" placeholder="E-mail">                    
+        <div class="connect">
+            <h3 class="footer-h3">ПОДПИШИСЬ НА РАСИЛКУ</h3>
+            <div class="connect__box">                            
+                <label class="connect__label">                
+                    <input type="email" class="connect__fill" name="mail" placeholder="E-mail">                    
                 </label>
-                </div>                
-                <div class="container-networks-botton">
-                <button class="networks-btn" type="submit">Отправить
-                    <svg class="networks-svg">
+                <button class="connect__btn" type="submit">Отправить
+                    <svg class="connect__svg">
                         <use href="./images/icons.svg#icon-plane"></use>
                     </svg>
-                </button>
-                
+                </button>                
                 </div>
             </div>
         </div>
