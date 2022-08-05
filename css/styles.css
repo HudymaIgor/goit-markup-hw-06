@@ -532,6 +532,7 @@ checkbox__label{
     position: relative;
     display: inline-block;
     outline: 1px solid var(--nav-text-color);
+   
 }
 
 .checkbox__icon{
@@ -543,9 +544,14 @@ left: 13px;
     width: 16px;
     height: 15px;
     background-repeat: no-repeat;
+
     border: 1px solid var(--nav-text-color);
     border-radius: 3px;
+    border: 1px solid var(--nav-text-color);
+
+    transition: background-color 250ms var(--timing-hover);
 }
+
 
 .checkbox__input:checked + .checkbox__icon{
 border-color: transparent;
@@ -553,13 +559,14 @@ background-color: #2196f3;
 background-image: url(../images/check.svg);
 background-size: contain;
 background-origin: border-box;
+
 }
-.checkbox__animait{
+/* .checkbox__animait{
     transition: transform 250ms var(--timing-hover);
 }
 .checkbox__input:checked ~ checkbox__animait{
     transform:scale()
-}
+} */
 .form__btn{
     margin-top: 30px;
 
