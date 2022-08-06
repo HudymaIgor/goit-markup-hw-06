@@ -686,7 +686,7 @@ height: 70px;
 .pictures-div {
 z-index: 1;     
     position: absolute;
-
+        bottom: 0;
 
     width: 370px;
     height: 70px;
@@ -908,7 +908,7 @@ color: var(--background-color);
 transition-property: border;
     transition-duration: 250ms;
     transition-timing-function: var(--timing-hover);
-    width: ;
+
 }
 
 .connect__fill:hover,
